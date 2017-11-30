@@ -1,6 +1,5 @@
 class Category < ActiveRecord::Base
 
-  def posts
-  end
+  has_many :posts
 
 end
