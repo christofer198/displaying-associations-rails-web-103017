@@ -2,4 +2,7 @@
 
 <!-- Add code here to list a category's posts. -->
 
+<% @category.posts.each do |p| %>
+    <li><%= link_to p.title, post_path(p) %></li>
+<% end %>
 <%= link_to (@category) %>
